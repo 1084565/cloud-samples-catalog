@@ -2,6 +2,7 @@ steps:
   mtaBuild:
     dockerImage: 'ppiper/mta-archive-builder:latest'
   cloudFoundryDeploy:
+    dockerImage: 'ppiper/neo-cli'
     cloudFoundry:
       credentialsId: '3d68b483-6649-4d88-858d-e97f028c5c2a'
       apiEndpoint: 'https://api.cf.sap.hana.ondemand.com'
