@@ -10,7 +10,7 @@ node() {
 	}
 
 	stage('Build') {
-		mtaBuild script: this, buildTarget: 'CF'
+		mtaBuild script: this, buildTarget: 'CF', dockerImage: 'ppiper/mta-archive-builder:latest'
 	}
 
 	stage('Deploy') {
