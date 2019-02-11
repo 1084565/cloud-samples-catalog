@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('piper-library-os') _
+@Library('piper-lib-os') _
 
 node() {
 	stage('Prepare') {
